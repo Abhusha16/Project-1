@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Test</title>
+</head>
+<img src="header.png" alt="Allscripts header" style="width: 20%;height: 25%;">
+<br><br>
+<body style="background-color: lightblue;font-family: 'Times New Roman', Times, serif;">
+ <h1 style="text-align: center;font-style: italic;">Technical Test</h1>
+    <section>
+        <ol>
+            <li>
+                <h4>Which of the following is the correct outcome of the SQL query below?<br><br>
+
+                    Query: SELECT DISTINCT cid FROM ENROLLED WHERE grade = 'C'</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="q1" value="0">
+                            A. Extract the course ids where student receive the grade C in the course
+                        </td>
+                        <td>
+                            <input type="radio" name="q1" value="1">
+                            B. Extract the Distinct course ids where student receive the grade of C in the course
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="q1" value="0">
+                            C. Error
+                        </td>
+                        <td>
+                            <input type="radio" name="q1" value="0">
+                            D. None of these
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <hr>
+            <li>
+                <h4>Which of the following is the correct outcome of the SQL query below?<br><br>
+                    Query: SELECT name, cid FROM student, enrolled WHERE student.sid = enrolled.sid AND enrolled.grade = 'C'
+
+                </h4>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="q2" value="0">
+                            A. Returns the name of all students and their corresponding course ids
+                        </td>
+                        <td>
+                            <input type="radio" name="q2" value="1">
+                            B. Returns the name of students and their corresponding course id where they have received grade C
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="q2" value="0">
+                            C. Error
+                        </td>
+                        <td>
+                            <input type="radio" name="q2" value="0">
+                            D. None of these
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <hr>
+            <li>
+                <h4>Which of the following statement will add a column ‘F_name’ to the STUDENT table?</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="q3" value="0">
+                            A. ALTER TABLE Student add column ( F_name varchar(20));
+                        </td>
+                        <td>
+                            <input type="radio" name="q3" value="1">
+                            B. ALTER TABLE Student add F_name varchar(20);
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="q3" value="0">
+                            C. ALTER TABLE Student add (F_name varchar(20));
+                        </td>
+                        <td>
+                            <input type="radio" name="q3" value="0">
+                            D. ALTER TABLE Student add column (F_name);
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <hr>
+            <li>
+                <h4>Consider the following queries: <br><br>
+
+                    Query1: select name from enrolled LEFT OUTER JOIN student on student.sid = enrolled.sid;
+                    <br><br>
+                    Query2: select name from student LEFT OUTER JOIN enrolled on student.sid = enrolled.sid;
+                     <br><br>
+                     Which of the following option is correct?
+                </h4>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="q4" value="1">
+                            A. Queries 1 and 2 will give the same results
+                        </td>
+                        <td>
+                            <input type="radio" name="q4" value="0">
+                            B. Queries 1 and 2 will give different results
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="q4" value="0">
+                            C. Query 1 will produce an error and Query 2 will run successfully
+                        </td>
+                        <td>
+                            <input type="radio" name="q4" value="0">
+                            D. Query 2 will produce an error and Query 1 will run successfully
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        <hr>
+        <li>
+            <h4> Which of the following command(s) is /  are related to transaction control in SQL?</h4>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="q5" value="0">
+                        A. ROLLBACK
+                    </td>
+                    <td>
+                        <input type="radio" name="q5" value="0">
+                        B. SAVEPOINT
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q5" value="0">
+                        C. COMMIT
+                    </td>
+                    <td>
+                        <input type="radio" name="q5" value="1">
+                        D. All of the above
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <hr>
+        <li>
+            <h4> Which of the following is true for a primary key?</h4>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="q6" value="0">
+                        A. It can take a value more than once
+                    </td>
+                    <td>
+                        <input type="radio" name="q6" value="1">
+                        B. It can’t take null values
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q6" value="0">
+                        C. It can take null values
+                    </td>
+                    <td>
+                        <input type="radio" name="q6" value="0">
+                        D. None of these
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <hr>
+        <li>
+            <h4> What is the difference between a primary key and a unique key?</h4>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="q7" value="1">
+                        A. You can have only one primary key whereas you can have multiple unique keys
+                    </td>
+                    <td>
+                        <input type="radio" name="q7" value="0">
+                        B. Primary key can take null values but unique key cannot null values
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q7" value="0">
+                        C. Primary key cannot be a date variable whereas unique key can be
+                    </td>
+                    <td>
+                        <input type="radio" name="q7" value="0">
+                        D. None of these
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <hr>
+        <li>
+            <h4>Which of the following is true for TRUNCATE in SQL?</h4>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="q8" value="1">
+                        A. It is usually faster than DELETE command
+                    </td>
+                    <td>
+                        <input type="radio" name="q8" value="0">
+                        B. There is no comparison between DELETE & TRUNCATE
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q8" value="0">
+                        C. It is usually slower than DELETE command
+                    </td>
+                    <td>
+                        <input type="radio" name="q8" value="0">
+                        D. Truncate command can be rolled back
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <hr>
+        <li>
+            <h4>Which of the following are the synonyms for ‘column’ and ‘row’ of a table? <br><br>
+                   1. Row = [Tuple, Record] <br><br>
+                   2.Column = [Field, Attribute] <br><br>
+                   3.Row = [Tuple, Attribute] <br><br>
+                   4.Columns = [Field, Record] <br><br>
+               <br>
+                 Select the correct option:
+            </h4>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="q9" value="1">
+                        A. 1 and 2
+                    </td>
+                    <td>
+                        <input type="radio" name="q9" value="0">
+                        B. 3 and 4
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q9" value="0">
+                        C. Only 1
+                    </td>
+                    <td>
+                        <input type="radio" name="q9" value="0">
+                        D. Only 2
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <hr>
+        <li>
+            <h4>Suppose you want to compare three keys (‘Primary Key’, ‘Super Key’ and ‘Candidate Key’) in a database. 
+                Which of the following option(s) is/are correct? <br><br>
+                     1.Minimal super key is a candidate key <br><br>
+                     2.Only one Candidate Key can be Primary Key <br><br>
+                     3.All super keys can be a candidate key <br><br>
+                     4.We cannot find “Primary Key” from “Candidate Key” <br><br>
+            </h4>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="q10" value="1">
+                        A. 1 and 2
+                    </td>
+                    <td>
+                        <input type="radio" name="q10" value="0">
+                        B. 2 and 3
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q10" value="0">
+                        C. 1 and 3
+                    </td>
+                    <td>
+                        <input type="radio" name="q10" value="0">
+                        D. 2 and 4
+                    </td>
+                </tr>
+            </table>
+        </li>
+        </ol>
+        <hr>
+        <button onclick="show_score()">Submit</button>
+    </section>
+    <script>
+        function show_score(){
+        
+        var q1=document.getElementsByName("q1");
+        var q2=document.getElementsByName("q2");
+        var q3=document.getElementsByName("q3");
+        var q4=document.getElementsByName("q4");
+        var q5=document.getElementsByName("q5");
+        var q6=document.getElementsByName("q6");
+        var q7=document.getElementsByName("q7");
+        var q8=document.getElementsByName("q8");
+        var q9=document.getElementsByName("q9");
+        var q10=document.getElementsByName("q10");
+        var a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
+        var score=Number(0);
+
+        for(var i=0;i<4;i++)
+        {
+            if(q1[i].checked)
+            {
+                a1=q1[i].value;
+                score=score+Number(a1);
+            }
+            if(q2[i].checked)
+            {
+                a2=q2[i].value;
+                score=score+Number(a2);
+            }
+            if(q3[i].checked)
+            {
+                a3=q3[i].value;
+                score=score+Number(a3);
+            }
+            if(q4[i].checked)
+            {
+                a4=q4[i].value;
+                score=score+Number(a4);
+            }
+            if(q5[i].checked)
+            {
+                a5=q5[i].value;
+                score=score+Number(a5);
+            }
+            if(q6[i].checked)
+            {
+                a6=q6[i].value;
+                score=score+Number(a6);
+            }
+            if(q7[i].checked)
+            {
+                a7=q7[i].value;
+                score=score+Number(a7);
+            }
+            if(q8[i].checked)
+            {
+                a8=q8[i].value;
+                score=score+Number(a8);
+            }
+            if(q9[i].checked)
+            {
+                a9=q9[i].value;
+                score=score+Number(a9);
+            }
+            if(q10[i].checked)
+            {
+                a10=q10[i].value;
+                score=score+Number(a10);
+            }
+        }
+    
+        alert("Your Final Score="+score);
+        }    
+    </script>
+    
+
+    
+</body>
+</html>
